@@ -1,0 +1,24 @@
+Comandos Para VSCode
+
+Criar pasta VENV -> python -m venv .venv
+Ativar pasta VENV -> .venv\Scripts\activate
+
+pip install Flask-SQLAlchemy Flask-Migrate
+
+//Usar uma única vez para executar as tabelas de banco de dados
+flask db init
+
+flask db upgrade
+
+flask db migrate
+
+flask db migrate -m "minha primeira migrate"
+
+//Flask-WTF é usado para forms
+pip instal Flask-WTF 
+
+pip install python-dotenv
+
+pip install flask-login
+
+pip install flask-bcrypt
