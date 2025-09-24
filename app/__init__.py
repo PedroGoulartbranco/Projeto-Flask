@@ -6,7 +6,7 @@ import os
 from flask_login import LoginManager
 from flask_bcrypt import Bcrypt
 
-load_dotenv()
+
 
 app = Flask(__name__)
 
@@ -20,10 +20,6 @@ app.config['UPLOAD_FILES'] = r'static/data'
 db = SQLAlchemy(app)  
 
 migrate = Migrate(app, db)
-
-loginManager = LoginManager(app)
-loginManager.login_view = 'homepage'
-bcrypt = Bcrypt(app)
 
 from app.view import index
 from app.models import Contato

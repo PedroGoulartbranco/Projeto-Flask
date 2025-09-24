@@ -66,7 +66,6 @@ class LoginForm(FlaskForm):
         if user:
             if bcrypt.check_password_hash(user.senha, self.senha.data.encode('utf-8')):
                 return user
-            
             else:
                 raise Exception('SENHA INCORRETA!!!')
         else:
